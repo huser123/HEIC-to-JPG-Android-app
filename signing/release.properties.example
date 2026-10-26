@@ -1,0 +1,5 @@
+# Copy to release.properties and fill in your own private values.
+storeFile=signing/heic-jpg.jks
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyAlias=heic-jpg
+keyPassword=YOUR_KEY_PASSWORD
