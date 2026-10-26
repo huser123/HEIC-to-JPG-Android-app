@@ -15,7 +15,7 @@ fájl a [`RELEASE/V1.0.0` mappában](RELEASE/V1.0.0) is megtalálható:
 - Méret: **2 072 449 bájt**
 - Ellenőrzés: sikeres fordítás, APK-aláírás-ellenőrzés és 6 sikeres,
   valódi HEIC-képekkel futtatott Android-emulátoros teszt.
-- Fizikai Xiaomi-készüléken még nem volt kipróbálva.
+- Xiaomi 11T Pro készüléken is kipróbálva: működik.
 
 SHA-256:
 

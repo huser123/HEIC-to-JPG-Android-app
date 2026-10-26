@@ -19,7 +19,7 @@ a Xiaomi 11T Pro Android-verzióival kompatibilisre készült.
 
 Sikeres fordítás és APK-aláírás-ellenőrzés. Mind a 6 Android-emulátoros
 működési teszt sikeres, valódi HEIC-dekódolással és MediaStore-mentéssel.
-Fizikai Xiaomi-készüléken még nem volt kipróbálva.
+Xiaomi 11T Pro készüléken is kipróbálva: működik.
 
 Az APK mérete: **2 072 449 bájt**.
 
