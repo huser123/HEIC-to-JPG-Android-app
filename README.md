@@ -3,10 +3,29 @@
 Egyszerű, magyar nyelvű, teljesen helyben működő képátalakító. Android 10 vagy
 újabb rendszerre, így a Xiaomi 11T Pro telefonra is készült.
 
+## Letöltés – V1.0.0
+
+**[Telepíthető APK letöltése](https://github.com/huser123/HEIC-to-JPG-Android-app/releases/download/V1.0.0/HEIC-JPG-1.0.0.apk)** · [V1.0.0 kiadás](https://github.com/huser123/HEIC-to-JPG-Android-app/releases/tag/V1.0.0) · [V1.0.0 forrásállapot](https://github.com/huser123/HEIC-to-JPG-Android-app/tree/V1.0.0)
+
+Az aláírt, önálló APK Android 10 vagy újabb rendszeren telepíthető. Ugyanez a
+fájl a [`RELEASE/V1.0.0` mappában](RELEASE/V1.0.0) is megtalálható:
+[APK letöltése a repóból](RELEASE/V1.0.0/HEIC-JPG-1.0.0.apk?raw=true).
+
+- Verzió: **1.0.0** (`versionCode = 1`)
+- Méret: **2 072 449 bájt**
+- Ellenőrzés: sikeres fordítás, APK-aláírás-ellenőrzés és 6 sikeres,
+  valódi HEIC-képekkel futtatott Android-emulátoros teszt.
+- Fizikai Xiaomi-készüléken még nem volt kipróbálva.
+
+SHA-256:
+
+```text
+1de114fd1b40bbfaf33bbbc4a29e69febc19fe52c51c2f9f89dca1eb041973dd
+```
+
 ## Használat
 
-1. Telepítsd az alkalmazás aláírt APK-fájlját a telefonon.
-   A repó a forráskódot tartalmazza; APK-t az alábbi fordítási lépésekkel készíthetsz.
+1. Töltsd le a fenti **V1.0.0 APK-t**, és telepítsd a telefonon.
    Ha az Android kéri, engedélyezd a telepítést annak a böngészőnek vagy
    fájlkezelőnek, amellyel megnyitod az APK-t.
 2. Indítsd el a **HEIC → JPG** alkalmazást.
