@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">Nyelv</string>
+    <string name="image_converter">KÉPÁTALAKÍTÓ</string>
+    <string name="intro">Válaszd ki a képeket. A többit elintézzük helyben, a telefonodon.</string>
+    <string name="quality_heading">Eredeti méret · Kiváló minőség</string>
+    <string name="quality_description">JPG, 95-ös minőségi beállítás. Az eredeti képek megmaradnak.</string>
+    <string name="choose_images">Képek kiválasztása</string>
+    <string name="choose_other_images">Más képek kiválasztása</string>
+    <string name="convert">Konvertálás</string>
+    <string name="conversion_in_progress">Konvertálás folyamatban…</string>
+    <string name="no_images">Még nincs kiválasztott kép</string>
+    <string name="save_location">MENTÉS HELYE</string>
+    <string name="gallery_note">A kész JPG-k a galériában is megjelennek.</string>
+    <string name="no_file_picker">Nem található rendszer-fájlválasztó ezen a telefonon.</string>
+    <string name="ok">Rendben</string>
+    <string name="loading_images">Képek beolvasása…</string>
+    <string name="batch_progress">Átalakítás: %1$d / %2$d</string>
+    <string name="batch_finished">Kész: %1$d / %2$d sikeres</string>
+    <string name="keep_app_open">Hagyd nyitva az alkalmazást a folyamat végéig.</string>
+    <string name="saved_to_folder">A JPG-ket elmentettük a %1$s mappába.</string>
+    <string name="tap_to_convert">A kezdéshez koppints a Konvertálás gombra.</string>
+    <string name="select_multiple">Egy vagy több HEIC/HEIF képet is kijelölhetsz.</string>
+    <string name="item_selected">Kiválasztva</string>
+    <string name="item_converting">Átalakítás…</string>
+    <string name="item_saved">Elmentve JPG-ként</string>
+    <string name="item_out_of_memory">Nincs elég szabad memória ehhez a képhez.</string>
+    <string name="item_file_unavailable">A fájl már nem érhető el. Válaszd ki újra.</string>
+    <string name="item_not_heic">Ez a fájl nem HEIC/HEIF kép.</string>
+    <string name="item_conversion_failed">Nem sikerült: sérült/nem támogatott kép, vagy mentési hiba.</string>
+    <plurals name="images_selected">
+        <item quantity="one">%d kép kiválasztva</item>
+        <item quantity="other">%d kép kiválasztva</item>
+    </plurals>
+    <plurals name="images_failed">
+        <item quantity="one">%d kép nem sikerült. A részletek a listában láthatók.</item>
+        <item quantity="other">%d kép nem sikerült. A részletek a listában láthatók.</item>
+    </plurals>
+</resources>
