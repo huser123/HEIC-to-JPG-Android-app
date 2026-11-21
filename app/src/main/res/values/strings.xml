@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">HEIC → JPG</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_hungarian" translatable="false">Magyar</string>
+    <string name="language">Language</string>
+    <string name="image_converter">IMAGE CONVERTER</string>
+    <string name="intro">Choose your images. The app takes care of the rest on your phone.</string>
+    <string name="quality_heading">Original size · High quality</string>
+    <string name="quality_description">JPG quality is set to 95. The app keeps the original images.</string>
+    <string name="choose_images">Choose images</string>
+    <string name="choose_other_images">Choose other images</string>
+    <string name="convert">Convert</string>
+    <string name="conversion_in_progress">Converting…</string>
+    <string name="no_images">No images selected yet</string>
+    <string name="save_location">SAVE LOCATION</string>
+    <string name="gallery_note">Your JPGs also appear in the gallery.</string>
+    <string name="no_file_picker">This phone has no system file picker.</string>
+    <string name="ok">OK</string>
+    <string name="loading_images">Reading images…</string>
+    <string name="batch_progress">Converting: %1$d / %2$d</string>
+    <string name="batch_finished">Done: %1$d / %2$d converted</string>
+    <string name="keep_app_open">Keep the app open until conversion finishes.</string>
+    <string name="saved_to_folder">The JPGs were saved to %1$s.</string>
+    <string name="tap_to_convert">Tap Convert to start.</string>
+    <string name="select_multiple">You can select one or more HEIC/HEIF images.</string>
+    <string name="item_selected">Selected</string>
+    <string name="item_converting">Converting…</string>
+    <string name="item_saved">Saved as JPG</string>
+    <string name="item_out_of_memory">There is not enough free memory for this image.</string>
+    <string name="item_file_unavailable">The file is no longer available. Select it again.</string>
+    <string name="item_not_heic">This file is not a HEIC/HEIF image.</string>
+    <string name="item_conversion_failed">Conversion failed. The image may be damaged or unsupported, or the JPG could not be saved.</string>
+    <plurals name="images_selected">
+        <item quantity="one">%d image selected</item>
+        <item quantity="other">%d images selected</item>
+    </plurals>
+    <plurals name="images_failed">
+        <item quantity="one">%d image failed. See the list for details.</item>
+        <item quantity="other">%d images failed. See the list for details.</item>
+    </plurals>
+</resources>

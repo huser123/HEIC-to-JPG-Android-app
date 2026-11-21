@@ -14,6 +14,8 @@ import android.provider.OpenableColumns
 import java.io.IOException
 import java.util.Locale
 
+internal class NotHeicException : IOException()
+
 /** All work here is called on the single conversion executor, never on the UI thread. */
 class Converter(private val resolver: ContentResolver) {
     companion object {
@@ -41,7 +43,7 @@ class Converter(private val resolver: ContentResolver) {
         val decoded = ImageDecoder.decodeBitmap(source) { decoder, info, _ ->
             val mime = info.mimeType.lowercase(Locale.ROOT)
             if (mime != "image/heif" && mime != "image/heic") {
-                throw IOException("Ez a fájl nem HEIC/HEIF kép.")
+                throw NotHeicException()
             }
             // ImageDecoder applies EXIF rotation/mirroring. Never rotate the result again.
             decoder.allocator = ImageDecoder.ALLOCATOR_SOFTWARE

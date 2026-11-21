@@ -6,7 +6,12 @@ import android.os.Handler
 import android.os.Looper
 import java.util.concurrent.Executors
 
-data class Item(val uri: Uri, val name: String, val status: String = "Kiválasztva", val failed: Boolean = false)
+data class Item(
+    val uri: Uri,
+    val name: String,
+    val statusResId: Int = R.string.item_selected,
+    val failed: Boolean = false,
+)
 
 /** Application-scoped job and state survive activity recreation without leaking an Activity. */
 class ConverterApplication : Application() {
@@ -49,21 +54,20 @@ class ConverterApplication : Application() {
         worker.execute {
             val converter = Converter(contentResolver)
             batch.forEachIndexed { index, item ->
-                main.post { update(index, "Átalakítás…", false) }
+                main.post { update(index, R.string.item_converting, false) }
                 var ok = false
                 val status = try {
                     converter.convert(item.uri, item.name)
                     ok = true
-                    "Elmentve JPG-ként"
+                    R.string.item_saved
                 } catch (_: OutOfMemoryError) {
-                    "Nincs elég szabad memória ehhez a képhez."
+                    R.string.item_out_of_memory
                 } catch (_: SecurityException) {
-                    "A fájl már nem érhető el. Válaszd ki újra."
-                } catch (error: Exception) {
-                    when {
-                        error.message == "Ez a fájl nem HEIC/HEIF kép." -> error.message!!
-                        else -> "Nem sikerült: sérült/nem támogatott kép, vagy mentési hiba."
-                    }
+                    R.string.item_file_unavailable
+                } catch (_: NotHeicException) {
+                    R.string.item_not_heic
+                } catch (_: Exception) {
+                    R.string.item_conversion_failed
                 }
                 val succeeded = ok
                 main.post {
@@ -76,8 +80,8 @@ class ConverterApplication : Application() {
         }
     }
 
-    private fun update(index: Int, status: String, failed: Boolean) {
-        items = items.mapIndexed { i, item -> if (i == index) item.copy(status = status, failed = failed) else item }
+    private fun update(index: Int, statusResId: Int, failed: Boolean) {
+        items = items.mapIndexed { i, item -> if (i == index) item.copy(statusResId = statusResId, failed = failed) else item }
         notifyChanged()
     }
 }
