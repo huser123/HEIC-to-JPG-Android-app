@@ -51,8 +51,8 @@ data, depth maps, and other auxiliary data.
 
 The app keeps the screen on during conversion, and a batch survives screen
 rotation. Conversion ends if you force-stop the app or Android ends its
-process. Selecting new files releases any persistent read permissions granted
-for the previous selection.
+process. Selecting new files releases persistent read permissions for files
+that are no longer selected.
 
 ### Open and build the source
 
